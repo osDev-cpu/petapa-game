@@ -1,0 +1,71 @@
+[gd_scene format=3 uid="uid://duoh373decwcs"]
+
+[ext_resource type="Script" uid="uid://cda1l246qaw1u" path="res://MainMenu.gd" id="1_wut1r"]
+
+[node name="MainMenu" type="Control" unique_id=1314017183]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_wut1r")
+
+[node name="MenuPanel" type="VBoxContainer" parent="." unique_id=1994043422]
+custom_minimum_size = Vector2(300, 0)
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -150.0
+offset_top = -50.5
+offset_right = 150.0
+offset_bottom = 50.5
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="SinglePlayerButton" type="Button" parent="MenuPanel" unique_id=1243244713]
+layout_mode = 2
+text = "single player
+"
+
+[node name="MultiplayerButton" type="Button" parent="MenuPanel" unique_id=420026207]
+layout_mode = 2
+text = "create room
+"
+
+[node name="MultiplayerPanel" type="VBoxContainer" parent="." unique_id=2097878829]
+visible = false
+custom_minimum_size = Vector2(300, 0)
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -34.5
+offset_top = -20.0
+offset_right = 34.5
+offset_bottom = 20.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="RoomInput" type="LineEdit" parent="MultiplayerPanel" unique_id=1373576]
+layout_mode = 2
+
+[node name="CreateRoomButton" type="Button" parent="MultiplayerPanel" unique_id=1101329064]
+layout_mode = 2
+text = "createRoomButton
+"
+
+[node name="JoinRoomButton" type="Button" parent="MultiplayerPanel" unique_id=650526027]
+layout_mode = 2
+text = "JoinRoomButton
+"
+
+[node name="BackButton" type="Button" parent="MultiplayerPanel" unique_id=20040765]
+layout_mode = 2
+text = "Backbutton
+"
